@@ -1,0 +1,780 @@
+
+/* =========================
+   RESET DAN DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #faf8f4;
+    color: #242c27;
+    line-height: 1.6;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================
+   HEADER DAN NAVBAR
+========================= */
+
+.angga-header {
+    background: #182c22;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.angga-navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.angga-logo {
+    color: #e6b76d;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.angga-logo span {
+    color: white;
+}
+
+.angga-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 23px;
+}
+
+.angga-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.angga-nav-links a:hover {
+    color: #e6b76d;
+}
+
+.angga-menu-toggle {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 28px;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.angga-home {
+    min-height: 570px;
+    background:
+        linear-gradient(90deg, #10251edc, #10251e50),
+        url("IMG_8334.png") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.angga-home-content {
+    max-width: 650px;
+}
+
+.angga-subtitle {
+    color: #c9954d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.angga-home h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.angga-home h1 span {
+    color: #e6b76d;
+}
+
+.angga-home-description {
+    color: #eee;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.angga-home-buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.angga-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.angga-btn-primary {
+    background: #d6a65f;
+    color: #182c22;
+}
+
+.angga-btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.angga-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SECTION UMUM
+========================= */
+
+.angga-section {
+    max-width: 1200px;
+    padding: 75px 25px;
+    margin: auto;
+}
+
+.angga-section-light {
+    max-width: 100%;
+    background: #f1eee7;
+    padding-left: max(25px, calc((100% - 1150px) / 2));
+    padding-right: max(25px, calc((100% - 1150px) / 2));
+}
+
+.angga-section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.angga-section-heading h2 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #20392b;
+}
+
+.angga-section-heading > p:last-child {
+    color: #777;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.angga-about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.angga-about-image img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.angga-about-content h3 {
+    font-size: 27px;
+    color: #20392b;
+    margin-bottom: 17px;
+}
+
+.angga-about-content > p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.angga-about-stats {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.angga-about-stats h3 {
+    color: #b78643;
+    margin: 0;
+    font-size: 25px;
+}
+
+.angga-about-stats p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* =========================
+   SEARCH DAN KATEGORI
+========================= */
+
+.angga-search {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline-color: #bd914f;
+}
+
+.angga-category {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+}
+
+.angga-category-btn {
+    padding: 11px 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.angga-category-btn.active,
+.angga-category-btn:hover {
+    background: #20392b;
+    color: white;
+}
+
+/* =========================
+   MENU MAKANAN DAN MINUMAN
+========================= */
+
+.angga-menu-grid,
+.angga-drink-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.angga-menu-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0000000c;
+    transition: .3s;
+}
+
+.angga-menu-card:hover {
+    transform: translateY(-6px);
+}
+
+.angga-menu-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    
+}
+
+.angga-menu-info {
+    padding: 20px;
+}
+
+.angga-menu-info h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.angga-menu-info p {
+    font-size: 13px;
+    color: #777;
+    min-height: 42px;
+}
+
+.angga-menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.angga-price {
+    color: #b78643;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.angga-add-btn {
+    background: #20392b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.angga-add-btn:hover {
+    background: #b78643;
+}
+
+.angga-no-result {
+    color: #777;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+}
+
+/* =========================
+   PROMO
+========================= */
+
+.angga-promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.angga-promo-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e6e0d6;
+}
+
+.angga-promo-featured {
+    background: #20392b;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.angga-promo-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #b78643;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.angga-promo-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.angga-promo-card p {
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.angga-promo-featured p {
+    color: #ddd;
+}
+
+.angga-promo-card h2 {
+    color: #b78643;
+    margin-bottom: 20px;
+}
+
+.angga-promo-card button {
+    padding: 12px 25px;
+    background: #d6a65f;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* =========================
+   KERANJANG
+========================= */
+
+.angga-cart {
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0000000c;
+}
+
+.angga-empty {
+    color: #888;
+    padding: 15px 0;
+}
+
+.angga-cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.angga-cart-item p {
+    font-size: 13px;
+    color: #777;
+}
+
+.angga-cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.angga-cart-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #20392b;
+    color: white;
+}
+
+.angga-cart-actions .angga-remove {
+    background: #b83b32;
+}
+
+.angga-cart-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+    padding: 20px 0;
+    color: #20392b;
+}
+
+.angga-form-group {
+    margin-bottom: 15px;
+}
+
+.angga-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.angga-form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.angga-checkout {
+    width: 100%;
+    padding: 15px;
+    background: #168b50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* =========================
+   GALERI FOODHOUSE
+========================= */
+
+.angga-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.angga-gallery img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    background: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.angga-gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   QR CODE
+========================= */
+
+.angga-qr-section {
+    background: #182c22;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.angga-qr-section h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.angga-qr-section > p:not(.angga-subtitle) {
+    color: #ddd;
+}
+
+.angga-qr-section button {
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #d6a65f;
+    color: #182c22;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#angga-qrcode {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#angga-qrcode img {
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.angga-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.angga-contact-info {
+    background: #20392b;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.angga-contact-info h3 {
+    margin-bottom: 25px;
+    color: #e6b76d;
+}
+
+.angga-contact-info p {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+#angga-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#angga-contact-form input,
+#angga-contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+#angga-contact-form button {
+    background: #20392b;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.angga-footer {
+    background: #101c16;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.angga-footer h2 {
+    color: #e6b76d;
+    margin-bottom: 10px;
+}
+
+.angga-footer p {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media(max-width: 850px) {
+
+    .angga-menu-toggle {
+        display: block;
+    }
+
+    .angga-nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #182c22;
+        flex-direction: column;
+        padding: 20px 25px;
+        gap: 18px;
+    }
+
+    .angga-nav-links.show {
+        display: flex;
+    }
+
+    .angga-menu-grid,
+    .angga-drink-grid,
+    .angga-promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .angga-about-container,
+    .angga-contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .angga-promo-featured {
+        transform: none;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .angga-home {
+        min-height: 450px;
+        padding: 40px 22px;
+    }
+
+    .angga-home h1 {
+        font-size: 37px;
+    }
+
+    .angga-section-heading h2 {
+        font-size: 27px;
+    }
+
+    .angga-menu-grid,
+    .angga-drink-grid,
+    .angga-promo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .angga-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .angga-gallery img {
+        height: 150px;
+    }
+
+    .angga-about-stats {
+        gap: 15px;
+    }
+
+    .angga-cart {
+        padding: 18px;
+    }
+
+    .angga-cart-total {
+        font-size: 13px;
+    }
+
+    .angga-logo {
+        font-size: 21px;
+    }
+}
+
+/* VIDEO ABOUT KELANARASA */
+.angga-about-slider {
+    width: 100%;
+    max-width: 750px;
+    height: 320px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.angga-about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .angga-about-slider {
+        max-width: 100%;
+        height: 220px;
+    }
+}
+
+/* VIDEO ABOUT KELANARASA */
+
+.angga-about-slider {
+    width: 100%;
+    max-width: 550px;
+    height: 300px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+}
+
+.angga-about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .angga-about-slider {
+        max-width: 100%;
+        height: 220px;
+    }
+}
