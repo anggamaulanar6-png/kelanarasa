@@ -4,7 +4,7 @@
 // ======================================
 
 // Ganti dengan nomor WhatsApp restoran
-const anggaNomorWhatsApp = "628511410696";
+const anggaNomorWhatsApp = "6285711410696";
 
 // ======================================
 // DATA MENU MAKANAN DAN MINUMAN
