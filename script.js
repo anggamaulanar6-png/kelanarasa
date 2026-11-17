@@ -99,7 +99,7 @@ const anggaMenus = [
         name: "Paket Spesial",
         category: "Promo",
         price: 27000,
-        description: "Ayam bakar, nasi, dan es teh.",
+        description: "Cireng Kuah, Risol, dan es teh.",
         image: "images/ayam-bakar.jpg"
     },
 
@@ -108,7 +108,7 @@ const anggaMenus = [
         name: "Paket Manis",
         category: "Promo",
         price: 25000,
-        description: "Chocolate cake dan kopi susu.",
+        description: "risol matcha,kopi susu.",
         image: "images/chocolate-cake.jpg"
     }
 
