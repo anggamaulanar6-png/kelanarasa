@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodHouse - Restaurant Digital Menu</title>
+
+    <meta name="description" content="FoodHouse Restaurant menyediakan berbagai makanan dan minuman lezat dengan menu digital QR Code.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="angga-header" id="angga-header">
+        <nav class="angga-navbar">
+
+            <a href="#home" class="angga-logo">
+                KELANA<span>RASA.</span>
+            </a>
+
+            <button class="angga-menu-toggle" id="angga-menu-toggle">
+                ☰
+            </button>
+
+            <ul class="angga-nav-links" id="angga-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#makanan">Makanan</a></li>
+                <li><a href="#minuman">Minuman</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- 1. HOME -->
+    <section class="angga-home" id="home">
+
+        <div class="angga-home-content">
+
+            <p class="angga-subtitle">WELCOME TO KELANARASA</p>
+
+            <h1>
+                Delicious Food<br>
+                <span>Happy Moments</span>
+            </h1>
+
+            <p class="angga-home-description">
+                Nikmati berbagai hidangan terbaik dengan
+                cita rasa istimewa dan pelayanan terbaik.
+            </p>
+
+            <div class="angga-home-buttons">
+                <a href="#makanan" class="angga-btn angga-btn-primary">
+                    Lihat Menu
+                </a>
+
+                <a href="#about" class="angga-btn angga-btn-outline">
+                    Tentang Kami
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section class="angga-section" id="about">
+
+        <div class="angga-section-heading"> 
+            <p class="angga-subtitle">ABOUT US</p>
+            <h2>Tentang FoodHouse</h2>
+            <p>Mengenal lebih dekat restoran kami.</p>
+        </div>
+
+        
+
+<div class="angga-about-image angga-about-slider">
+
+    <video class="angga-about-video"
+           controls
+           autoplay
+           muted
+           loop
+           playsinline>
+        <source src="vidio.MP4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+</div>
+
+
+            <div class="angga-about-content">
+
+                <h3>Rasa Berkualitas, Harga Bersahabat</h3>
+
+                <p>
+                    FoodHouse merupakan restoran yang menyediakan
+                    berbagai pilihan makanan dan minuman dengan
+                    bahan berkualitas serta cita rasa yang lezat.
+                </p>
+
+                <p>
+                    Kami selalu mengutamakan kebersihan,
+                    kenyamanan, kualitas makanan, dan kepuasan
+                    setiap pelanggan.
+                </p>
+
+                <div class="angga-about-stats">
+                    <div>
+                        <h3>20+</h3>
+                        <p>Menu Pilihan</p>
+                    </div>
+
+                    <div>
+                        <h3>100%</h3>
+                        <p>Bahan Berkualitas</p>
+                    </div>
+
+                    <div>
+                        <h3>2026</h3>
+                        <p>Tahun Berdiri</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3. MENU MAKANAN -->
+    <section class="angga-section angga-section-light"
+             id="makanan">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">OUR FOOD</p>
+            <h2>Menu Makanan</h2>
+            <p>Berbagai pilihan makanan favorit pelanggan.</p>
+        </div>
+
+        <input
+            type="text"
+            id="angga-search"
+            class="angga-search"
+            placeholder="Cari makanan atau minuman..."
+        >
+
+        <div class="angga-category">
+            <button class="angga-category-btn active"
+                    data-category="Semua">
+                Semua
+            </button>
+
+            <button class="angga-category-btn"
+                    data-category="Makanan">
+                Makanan
+            </button>
+
+            <button class="angga-category-btn"
+                    data-category="Minuman">
+                Minuman
+            </button>
+
+            <button class="angga-category-btn"
+                    data-category="Dessert">
+                Dessert
+            </button>
+        </div>
+
+        <div class="angga-menu-grid" id="angga-food-grid">
+        </div>
+
+    </section>
+
+    <!-- 4. MENU MINUMAN -->
+    <section class="angga-section" id="minuman">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">OUR DRINKS</p>
+            <h2>Menu Minuman</h2>
+            <p>Minuman segar untuk menemani hidangan Anda.</p>
+        </div>
+
+        <div class="angga-drink-grid" id="angga-drink-grid">
+        </div>
+
+    </section>
+
+    <!-- 5. PROMO -->
+    <section class="angga-section angga-section-light"
+             id="promo">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">SPECIAL OFFER</p>
+            <h2>Paket & Promo</h2>
+            <p>Nikmati paket hemat spesial dari FoodHouse.</p>
+        </div>
+
+        <div class="angga-promo-grid">
+
+            <div class="angga-promo-card">
+                <span class="angga-promo-label">PAKET HEMAT</span>
+                <h3>Paket Kenyang</h3>
+                <p>Nasi goreng + Es teh manis.</p>
+                <h2>Rp 20.000</h2>
+                <button onclick="anggaAddPromo(9)">
+                    Pesan Paket
+                </button>
+            </div>
+
+            <div class="angga-promo-card angga-promo-featured">
+                <span class="angga-promo-label">BEST SELLER</span>
+                <h3>Paket Spesial</h3>
+                <p>Ayam bakar + Nasi + Es teh.</p>
+                <h2>Rp 27.000</h2>
+                <button onclick="anggaAddPromo(10)">
+                    Pesan Paket
+                </button>
+            </div>
+
+            <div class="angga-promo-card">
+                <span class="angga-promo-label">PAKET DESSERT</span>
+                <h3>Paket Manis</h3>
+                <p>Chocolate cake + Kopi.</p>
+                <h2>Rp 25.000</h2>
+                <button onclick="anggaAddPromo(11)">
+                    Pesan Paket
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- KERANJANG PESANAN -->
+    <section class="angga-section" id="pesanan">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">YOUR ORDER</p>
+            <h2>Keranjang Pesanan</h2>
+            <p>Periksa pesanan Anda sebelum dikirim.</p>
+        </div>
+
+        <div class="angga-cart">
+
+            <div id="angga-cart-items">
+                <p class="angga-empty">
+                    Belum ada pesanan.
+                </p>
+            </div>
+
+            <div class="angga-cart-total">
+                <h3>Total Pembayaran</h3>
+                <h3 id="angga-total">Rp 0</h3>
+            </div>
+
+            <div class="angga-form-group">
+                <label for="angga-customer">Nama Pelanggan</label>
+                <input type="text"
+                       id="angga-customer"
+                       placeholder="Masukkan nama Anda">
+            </div>
+
+            <div class="angga-form-group">
+                <label for="angga-table">Nomor Meja</label>
+                <input type="number"
+                       id="angga-table"
+                       placeholder="Contoh: 05">
+            </div>
+
+            <button class="angga-checkout"
+                    onclick="anggaCheckout()">
+                Pesan Melalui WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- 6. GALERI -->
+    <section class="angga-section angga-section-light"
+             id="galeri">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">OUR GALLERY</p>
+            <h2>Galeri FoodHouse</h2>
+            <p>Beberapa hidangan pilihan kami.</p>
+        </div>
+
+        <div class="angga-gallery">
+
+            <img src="Cireng Keju Pedas SumLicious!.png"
+                 alt="Cireng Kuah Keju">
+
+            <img src="dimsum kuah.jpeg"
+                 alt="Dimsum Kuah Keju">
+
+            <img src="Camilan Gulung Matcha Renyah.png"
+                 alt="Risol Matcha Keju Lumer">
+
+            <img src="Pangsit Goreng Keju dan Rumput Laut.png"
+                 alt="Samyang Roll Keju Lumer">
+
+            <img src="butterscot.png"
+                 alt="Kopi">
+
+            <img src="Es Teh Dingin dan Cireng Keju SumLicious!.png"
+                 alt="Paket Kenyang">
+
+        </div>
+
+    </section>
+
+    <!-- QR MENU -->
+    <section class="angga-qr-section">
+
+        <p class="angga-subtitle">DIGITAL MENU</p>
+
+        <h2>Scan QR Code Kami</h2>
+
+        <p>
+            Scan QR Code menggunakan kamera smartphone
+            untuk melihat menu FoodHouse.
+        </p>
+
+        <button id="angga-generate-qr">
+            Buat QR Code
+        </button>
+
+        <div id="angga-qrcode"></div>
+
+        <button id="angga-download-qr">
+            Download QR Code
+        </button>
+
+    </section>
+
+    <!-- 7. CONTACT -->
+    <section class="angga-section" id="contact">
+
+        <div class="angga-section-heading">
+            <p class="angga-subtitle">CONTACT US</p>
+            <h2>Hubungi Kami</h2>
+            <p>Kirim pertanyaan atau pesan kepada kami.</p>
+        </div>
+
+        <div class="angga-contact-container">
+
+            <div class="angga-contact-info">
+
+                <h3>Informasi Restoran</h3>
+
+                <p>📍 Alamat: Tasikmalaya, Jawa Barat</p>
+
+                <p>📞 Telepon: 0857-1141-0696</p>
+
+                <p>✉ Email: KelanaRasa@gmail.com</p>
+
+                <p>🕒 Jam Operasional: 17.00 - 00.00</p>
+
+            </div>
+
+            <form id="angga-contact-form">
+
+                <input
+                    type="text"
+                    id="angga-contact-name"
+                    placeholder="Nama lengkap"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="angga-contact-email"
+                    placeholder="Email"
+                    required
+                >
+
+                <textarea
+                    id="angga-contact-message"
+                    placeholder="Tulis pesan Anda..."
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="angga-footer">
+
+        <h2>KELANARASA.</h2>
+
+        <p>
+            Delicious Food, Happy Moments.
+        </p>
+
+        <p>
+            © 2026 KelanaRasa Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
