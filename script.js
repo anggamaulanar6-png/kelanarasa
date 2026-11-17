@@ -26,7 +26,7 @@ const anggaMenus = [
         name: "Dimsum Kuah Keju Kelana",
         category: "Makanan",
         price: 22000,
-        description: "Ayam bakar dengan nasi dan sambal pilihan.",
+        description: "Dimsum Isi Daging Yang Disiram Kuah Keju.",
         image: "dimsum kuah.jpeg"
     },
 
@@ -62,7 +62,7 @@ const anggaMenus = [
         name: "butterscoth coffe kelana",
         category: "Minuman",
         price: 25000,
-        description: "Jus alpukat segar dan creamy.",
+        description: "Kopi Yang Di Tambahkan Sirup Butterschoth.",
         image: "Kopi Karamel Dingin dengan Krim Whipped.png"
     },
 
